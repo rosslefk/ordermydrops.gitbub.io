@@ -10,16 +10,16 @@ h5,
 h6 {
   font-family: 'Merriweather', serif;
   font-weight: 100px;
-    color:#5fc1a6;
+ 
 }
 p{
-  color:#5b5b5c;
+
 }
 
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/ty-eyes6.png") no-repeat center top;
+  background: url("../img/ty-purse.png") no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,12 +31,12 @@ header.masthead {
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
+  background-color: #000;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 header.masthead h1 {
