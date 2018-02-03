@@ -18,16 +18,14 @@ p{
 
 header.masthead {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/ty-purse.png") no-repeat center top;
+  background-color: #eaeaea;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 5rem;
-  padding-bottom: 4rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
-
 
 header.masthead .overlay {
   position: absolute;
@@ -36,7 +34,7 @@ header.masthead .overlay {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.0;
 }
 
 header.masthead h1 {
@@ -44,27 +42,47 @@ header.masthead h1 {
 }
 
 
-header.masthead .valueprop {
-  border-style: solid;
-  border-color: #5fc1a6;
-  border-radius: 25px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-
-}
-
 header.masthead .top-buffer { 
   margin-top: 25rem;
   color: white;
-
 }
 
-@media (min-width: 768px) {
+.thumbnail img {
+    min-height: 100%;
+    min-width: 100%;    
+    max-height: 100%;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.titanic {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+
+  padding: 15px;
+}
+.titanic path {
+  fill: #6fa3c6;
+  stroke: #6fa3c6;
+}
+.question {
+  background-color:#FFFFFF;
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+  }
+
+
+@media (min-width: 300px) {
   header.masthead {
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+@media (min-width: 800px) {
+  header.masthead {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -80,16 +98,33 @@ header.masthead .top-buffer {
   background-size: cover;
 }
 
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
+
+
+.question {
+  background-color:#FFFFFF;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
 }
 
-.profile-icons {
-  background-color:#e6e6e6;
+.question h1{
+  padding-bottom: 1rem; 
+}
+
+.question .option {
+  background-color:rgba(113, 163, 197, .1);
+  border: 2px solid #6fa3c6;
+  max-width: 45rem;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.question .option:hover {
+  background-color:rgba(250, 162, 40, .3);
+  border: 2px solid #FAA228;
+  max-width: 45rem;
+  border-radius: 25px;
   padding-top: 2rem;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
 }
 .profile-icons .profile-icons-group {
   background-color:#FFFFFF;
