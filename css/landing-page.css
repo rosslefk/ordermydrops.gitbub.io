@@ -60,6 +60,28 @@ header.masthead .valueprop {
   fill: #6fa3c6;
   stroke: #6fa3c6;
 }
+
+
+
+.pricing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.thumbnail img {
+    min-height: 100%;
+    min-width: 100%;    
+    max-height: 100%;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+
 @media (min-width: 300px) {
   header.masthead {
 
