@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="326.5px" height="242px" viewBox="0 0 326.5 242" enable-background="new 0 0 326.5 242" xml:space="preserve">
-<image display="none" overflow="visible" width="792" height="602" xlink:href="../../../../Desktop/Screen Shot 2018-02-14 at 9.40.31 PM.png"  transform="matrix(0.5 0 0 0.5 -86.5 -60.5)">
+<image display="none" overflow="visible" enable-background="new    " width="792" height="602" xlink:href="../../../../Desktop/Screen Shot 2018-02-14 at 9.40.31 PM.png"  transform="matrix(0.5 0 0 0.5 -86.5 -60.5)">
 </image>
 <g id="Layer_2">
 </g>
@@ -11,16 +11,20 @@
 	<rect y="33" fill="#72A2C4" width="59.072" height="161.5"/>
 	<rect x="75.178" y="71.152" fill="#4B7EA3" width="59.072" height="123.348"/>
 	<rect x="192.634" y="90.043" fill="#8181BE" width="59.07" height="104.457"/>
-	<rect x="267.429" y="120.417" fill="#3E429A" width="59.071" height="74.083"/>
+	<rect x="267.43" y="120.417" fill="#3E429A" width="59.07" height="74.083"/>
 	<text transform="matrix(1 0 0 1 8.5 120.75)" fill="#FFFFFF" font-family="'PTSans-Bold'" font-size="17">$1.32</text>
 	<text transform="matrix(1 0 0 1 85 139.8262)" fill="#FFFFFF" font-family="'PTSans-Bold'" font-size="17">$1.00</text>
 	<text transform="matrix(1 0 0 1 201 149.2715)" fill="#FFFFFF" font-family="'PTSans-Bold'" font-size="17">$0.85</text>
 	<text transform="matrix(1 0 0 1 275 164.459)" fill="#FFFFFF" font-family="'PTSans-Bold'" font-size="17">$0.60</text>
-	<text transform="matrix(1 0 0 1 12.4814 12.5)"><tspan x="0" y="0" font-family="'PTSans-Regular'" font-size="10">Leading</tspan><tspan x="-6.895" y="12" font-family="'PTSans-Regular'" font-size="10">Competitor</tspan></text>
-	<text transform="matrix(1 0 0 1 205.1143 71)"><tspan x="0" y="0" font-family="'PTSans-Regular'" font-size="10">Leading</tspan><tspan x="-6.896" y="12" font-family="'PTSans-Regular'" font-size="10">Competitor</tspan></text>
+	<text transform="matrix(1 0 0 1 12.4814 12.5)" font-family="'PTSans-Regular'" font-size="10">Leading</text>
+	<text transform="matrix(1 0 0 1 5.5864 24.5)" font-family="'PTSans-Regular'" font-size="10">Competitor</text>
+	<text transform="matrix(1 0 0 1 205.1143 71)" font-family="'PTSans-Regular'" font-size="10">Leading</text>
+	<text transform="matrix(1 0 0 1 198.2188 83)" font-family="'PTSans-Regular'" font-size="10">Competitor</text>
 	<text transform="matrix(1 0 0 1 82.0195 63)" font-family="'PTSans-Regular'" font-size="10">mydrops™</text>
 	<text transform="matrix(1 0 0 1 276.7695 113.5)" font-family="'PTSans-Regular'" font-size="10">mydrops™</text>
-	<text transform="matrix(1 0 0 1 220.2773 214)"><tspan x="0" y="0" font-family="'PTSans-Regular'" font-size="16">Cost Per ml</tspan><tspan x="-12.848" y="19.2" font-family="'PTSans-Regular'" font-size="16">Multiuse bottle</tspan></text>
-	<text transform="matrix(1 0 0 1 29.7769 214)"><tspan x="0" y="0" font-family="'PTSans-Regular'" font-size="16">Cost Per ml</tspan><tspan x="-19.832" y="19.2" font-family="'PTSans-Regular'" font-size="16">Preservative Free</tspan></text>
+	<text transform="matrix(1 0 0 1 220.2773 214)" font-family="'PTSans-Regular'" font-size="16">Cost Per mL</text>
+	<text transform="matrix(1 0 0 1 207.4297 233.2002)" font-family="'PTSans-Regular'" font-size="16">Multiuse bottle</text>
+	<text transform="matrix(1 0 0 1 29.7769 214)" font-family="'PTSans-Regular'" font-size="16">Cost Per mL</text>
+	<text transform="matrix(1 0 0 1 9.9448 233.2002)" font-family="'PTSans-Regular'" font-size="16">Preservative Free</text>
 </g>
 </svg>
