@@ -33,7 +33,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/thankyou-page.css" rel="stylesheet">
+    <link href="css/thankyou2-page.css" rel="stylesheet">
 
     <!--  -->
     <script src="./js/titanic.js"></script>
@@ -60,34 +60,28 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead text-black text-center">
+    <header class="masthead text-black text-left">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <div class='titanic titanic-heart '>
-              <script>
-                var titanic = new Titanic({
-                  autoplay:true,
-                  click: true
-                })
-              </script>
-            </div>
             <h1>Thanks for your support!</h1>
-            <p>Apologies, this product is not yet available. But we are working really hard on it and your support gives us extra motivation. <br/><br/>We promise that you will be the first to know about future developments!</p>
-
-
-
-
-
-              <p>test</p>
-              <script>
-                document.getElementById("write").innerHTML = window.location.search;
-                "The page protocol is: " + window.location.search;
-              </script>
+            <p>Apologies, this product is not yet available. We are working really, really hard on it and your support gives us extra motivation.</p>
+            <hr>
+            <p>We want to keep you informed about updates and future developments, and may contact you at <span style="color:#71A2C5;font-weight:bold" id="email"></span>. Don’t worry, we won’t spam you!</p>
+            <p>You should expect an email introduction from our CEO. Feel free to reach out with any comments or questions. </p>
+            <p>Thanks!</p>
 
               <script>
-                document.getElementById("demo").innerHTML = 
-                "The URL port number of the current page is: " + window.location.port;
+                function getQueryVariable(variable) {
+                  var query = window.location.search.substring(1);
+                  var vars = query.split("&");
+                    for (var i=0;i<vars.length;i++) {
+                      var pair = vars[i].split("=");
+                      if(pair[0] == variable){return pair[1];}
+                    } 
+                    return(false);
+                  } 
+                  document.getElementById("email").innerHTML = decodeURIComponent(getQueryVariable("email"))
               </script>
 
 
@@ -96,64 +90,17 @@
       </div>
     </header>
 
-
-    <section class="question bg-light text-center">
-      <div class="container ">
-        <h1>In the meantime, we'd like to get to know you better...</h1>
-        <p>Which of the below describes you the most?</p>
-        <form action="thankyou2.html"> 
-          <fieldset> 
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="option mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <h3>Discount Shopper.</h3>
-                  <div class="thumbnail">
-                    <img src="img/percent.svg" />
-                  </div>
-                  <p>You have a name brand of eye drops that work for you, but you want a low cost solution</p>
-                    <p>Select the brand. See the savings.</p>
-                        <select name="devices">
-                          <option value="ipod">-select-</option> 
-                          <option value="radio">Refresh</option> 
-                          <option value="computer">TheraTears</option>
-                          <option value="computer">GenTeal</option>
-                          <option value="computer">Systane</option>
-                          <option value="computer">Visine Tears</option>
-                          <option value="computer">Bion Tears</option>
-                          <option value="computer">Clear Eyes</option>
-                          <option value="computer">HypoTears</option>
-                          <option value="computer">Soothe </option>
-                        </select>
-                      <input class="btn btn-lg btn-primary discount_button" type="submit" value="Show me!">
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="option mx-auto mb-5 mb-lg-0 mb-lg-3">
-                  <h3>Too Many Options.</h3>
-                  <div class="thumbnail">
-                    <img src="img/interface.svg" />
-                  </div>
-                  <p>You are confused by the many options of dry eye relief. Which drops are best for you?</p>
-                  <button type="submit" class="btn btn-block btn-lg btn-primary options_button">Yup, this is me!</button>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="option mx-auto mb-0 mb-lg-3">
-                  <h3>Do I have Dry Eye?</h3>
-                  <div class="thumbnail">
-                    <img src="img/doctor.svg" />
-                  </div>
-                  <p>Not sure if you have dry eye or not?</p>
-                  <button type="submit" class="btn btn-block btn-lg btn-primary dry_eye_button">Do I have dry eye?</button>
-                </div>
-              </div>
+ <section class="package text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="thumbnail-lg">
+              <img src="img/product.png" />
             </div>
-          </fieldset> 
-        </form>
+          </div>
+        </div>
       </div>
-    </section> 
-
-
+    </section>
  
 
     <!-- Footer -->
