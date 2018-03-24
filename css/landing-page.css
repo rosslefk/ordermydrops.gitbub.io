@@ -205,9 +205,9 @@ header.masthead .valueprop {
   }
   .thumbnail-lg img {
       min-height: 100%;
-      min-width: 120%;    
+      min-width: 100%;    
       max-height: 100%;
-      max-width: 120%;
+      max-width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -279,4 +279,13 @@ header.masthead .valueprop {
   footer.footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+  @media (min-width: 1200px) {
+
+      .thumbnail-lg img {
+      min-height: 100%;
+      min-width: 120%;    
+      max-height: 100%;
+      max-width: 120%;
+  }
   }
