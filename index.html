@@ -21,7 +21,11 @@
 
     <title>mydrops™ - dry eye relief</title>
 
-    <!-- Bootstrap core CSS -->
+
+    <!-- exit intent popup modal CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+        <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -34,6 +38,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
+    
+    <!-- exit intent popup modal js -->
+    <script data-cfasync="false" src="js/modernizr.custom.js"></script>
 
   </head>
 
@@ -51,6 +58,33 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPR7PL3"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- exit intent popup modal -->
+    <div class="ffb-modal ffb-effect text-black text-center" id="bounceModal">
+    <div class="ffb-content">
+      <a class="ffb-close ffb-close-icon"></a>
+      <h3>Wait! Your eyes deserve more...</h3>
+      <div class="thumbnail-exit">
+        <img src="img/doctor.svg" />
+      </div>
+      <h4>Have confidence in your Eye Drops!</h4> 
+      <div>
+        <form action="thankyou.html" method="GET">
+          <fieldset>
+            <div class="form-row">
+              <div class="col-12 col-md-12 mb-2 mb-md-0">
+                <input type="email" name="email" class="form-control form-control-lg" placeholder="Enter your email..." required="required">
+              </div>
+              <div class="col-12 col-md-12">
+                <button type="submit" class="btn btn-block btn-lg btn-primary get_mydrops_button">Get mydrops™</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light static-top">
@@ -72,7 +106,7 @@
             <h4>Delivered.</h4>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto top-buffer">           
-              <h3>Have confidence in your Eye Drops!</h3>
+            <h3>Have confidence in your Eye Drops!</h3>
             <form action="thankyou.html" method="GET">
               <fieldset>
                 <div class="form-row">
@@ -147,10 +181,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-                  <h3>What's the difference?</h3>
+            <h3>What's the difference?</h3>
             <br/>
             <p class="lead mb-0">Receive personalized dry eye drops, to your door.</p><br/><p class="lead mb-0"> Your eyes deserve it!</p>
-                    <br/>
+            <br/>
             <form action="thankyou.html" method="GET">
               <fieldset>
                 <div class="form-row">
@@ -163,7 +197,8 @@
                 </div>
               </fieldset>
             </form>
-                                <br/>                    <br/>
+            <br/>
+            <br/>
           </div>
           <div class="col-lg-8">
             <div class="thumbnail-lg">
@@ -218,7 +253,57 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- /container -->
+    <div class="ffb-overlay"></div>
+    <!-- the overlay element -->
 
+    <!-- exit intent popup modal jquery library -->
+    <script data-cfasync="false" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script data-cfasync="false" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+      $(function() {
+        function addEvent(obj, evt, fn) {
+          if (obj.addEventListener) {
+            obj.addEventListener(evt, fn, false);
+          } else if (obj.attachEvent) {
+            obj.attachEvent("on" + evt, fn);
+          }
+        }
+
+        addEvent(document, "mouseout", function(e) {
+          e = e ? e : window.event;
+          var from = e.relatedTarget || e.toElement;
+          var visited = $.cookie("bounce_convert_cookie");
+          if (visited === '1') {
+            return false;
+          } else if ((!from || from.nodeName == "HTML") && e.pageY < $(window).scrollTop()) {
+            $("#bounceModal").addClass("ffb-show");
+            //setting cookie expiry time by (s * ms)
+            var date = new Date();
+            //10 secounds time for cookie
+            date.setTime(date.getTime() + (10 * 1000));
+            $.cookie("bounce_convert_cookie", '1', {
+              expires: date
+            });
+          }
+        });
+
+        // Closing the Popup Box
+        $(".ffb-close").click(function() {
+          $("#bounceModal").removeClass("ffb-show");
+        });
+
+        // If clicked anywhere on body
+        $("body").click(function() {
+          $("#bounceModal").removeClass("ffb-show");
+        });
+
+        // Prevent event if clicked on #bounceModal
+        $("#bounceModal").click(function(e) {
+          e.stopPropagation();
+        });
+      });
+    </script>
   </body>
-
 </html>
